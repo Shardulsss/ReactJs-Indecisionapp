@@ -2,8 +2,9 @@ import React from 'react'
 import Option from './Option'
 const Options = (props)=>{
     return <div>
-        {props.options.length==0 && <p>Enter some tasks </p>}
-        {props.options.map((option)=><Option key={option} Task = {option} handleRemoveOne={props.handleRemoveOne}/>)}
+        <h3 className="widget-header">your options</h3>
+        {props.options.length==0 && <p className="widget-message">Enter some tasks </p>}
+        {props.options.map((option,index)=><Option key={option} count={index+1} Task = {option} handleRemoveOne={props.handleRemoveOne}/>)}
         </div>
 }
 export default Options

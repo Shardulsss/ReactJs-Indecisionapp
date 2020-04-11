@@ -1,5 +1,5 @@
 .header{
-    background-color: #20222b;
+    background-color: $dark-blue;
     color: white;
     padding: 2rem 1rem;
     margin-bottom: 2rem;
@@ -10,7 +10,7 @@
     margin: 0;
 }
 .header_sub{
-    color: #a5afd7;
+    color: $light-blue;
     font-weight: 500;
     font-size: medium;
     margin: 0;

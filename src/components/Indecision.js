@@ -101,20 +101,26 @@ export default class IndecisionApp extends React.Component{
         const subtitle = "Lets orginize your day"
         return <div>
         <Header title={title} sub={subtitle}/>
-        <Actions 
-            handleRemove={this.handleRemoveAll} 
-            handlePick={this.handlePick} 
-            handleDisabler={this.state.options.length>0}
-            />
-        <br></br>
-        <Options 
-            options = {this.state.options}
-            handleRemoveOne = {this.handleRemoveOne}
-            />
-        <br></br>
-        <AddOption 
-            handleAddOption = {this.handleAddOption}
-        />
+        <div className="container">
+            <Actions 
+                handleRemove={this.handleRemoveAll} 
+                handlePick={this.handlePick} 
+                handleDisabler={this.state.options.length>0}
+                />
+            <br></br>
+            <div className="widget">
+                <Options 
+                    options = {this.state.options}
+                    handleRemoveOne = {this.handleRemoveOne}
+                />
+                <br></br>
+                <AddOption 
+                    handleAddOption = {this.handleAddOption}
+                />
+            </div>
+            
+        </div>
+        
         <OptionModal 
             selectedOption={this.state.selectedOption}  
             handleClearSelectedOption={this.handleClearSelectedOption}>

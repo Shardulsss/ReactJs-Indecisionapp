@@ -1,0 +1,48 @@
+.big-button{
+    background: $purple;
+    width:50%;
+    border:none;
+    border-bottom: .6rem solid darken($color:$purple, $amount: 10%);
+    border-top: .6rem solid darken($color:$purple, $amount: 10%);
+    border-left: .6rem solid darken($color:$purple, $amount: 10%);
+    color: white;
+    font-weight: lighter;
+    font-size: $m-size;
+    margin-bottom: $s-size;
+    padding: 0.5rem;
+    cursor: pointer;
+}
+.big-button2{
+    background: none;
+    width:50%;
+    border:none;
+    border-bottom: .6rem solid darken($color:$purple, $amount: 10%);
+    border-top: .6rem solid darken($color:$purple, $amount: 10%);
+    border-right: .6rem solid darken($color:$purple, $amount: 10%);
+    color: $purple;
+    font-weight: lighter;
+    font-size: $m-size;
+    margin-bottom: $s-size;
+    padding: 0.5rem;
+    cursor: pointer;
+}
+.big-button:disabled{
+    opacity: 0.5;
+    cursor: default;
+}
+.big-button2:disabled{
+    opacity: 0.5;
+    cursor: default;
+}
+
+.button{
+    border: none;
+    background: $purple;
+    border-bottom: .4rem solid darken($color:$purple, $amount: 10%);
+    color: white;
+    font-weight: lighter;
+    font-size: $s-size;
+    
+    padding: 0.5rem;
+    cursor: pointer;
+}

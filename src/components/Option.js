@@ -1,9 +1,14 @@
 import React from 'react'
 const Option = (props)=>{
     return(
+        
         <div>
-            Task : {props.Task}
-            <button onClick={(e)=>props.handleRemoveOne(props.Task)}>Remove</button>
+            
+            <div className="widget-option">
+                <div className="widget-option-message">{props.count} : {props.Task}</div>
+                <button className="button" onClick={(e)=>props.handleRemoveOne(props.Task)}>Remove</button>
+            </div>
+            
         </div>)
 }
  
